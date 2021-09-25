@@ -17,20 +17,20 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>Hello World | Hexo</title>
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <title>SQL手工注入流程 | Hexo</title>
+  <meta name="description" content="Quick Start123456789101112131415161718192021222324sql注入点根据不同维度可分为：	1.根据请求方式分类：		GET方式请求注入			常见产生位置：url		POST方式请求注入			常见产生位置：POST包的请求实体	2.根据注入点参数分类：		整数型注入			例：				select uname,password form users wher">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://echo.github.io/2021/09/25/hello-world/index.html">
+<meta property="og:title" content="SQL手工注入流程">
+<meta property="og:url" content="https://echo.github.io/2021/09/25/sql%E6%89%8B%E5%B7%A5%E6%B3%A8%E5%85%A5%E6%B5%81%E7%A8%8B/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="Quick Start123456789101112131415161718192021222324sql注入点根据不同维度可分为：	1.根据请求方式分类：		GET方式请求注入			常见产生位置：url		POST方式请求注入			常见产生位置：POST包的请求实体	2.根据注入点参数分类：		整数型注入			例：				select uname,password form users wher">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-09-25T05:20:39.531Z">
-<meta property="article:modified_time" content="2021-09-25T07:06:27.340Z">
+<meta property="article:published_time" content="2021-09-25T12:23:50.461Z">
+<meta property="article:modified_time" content="2021-09-25T12:23:50.461Z">
 <meta property="article:author" content="slh">
 <meta name="twitter:card" content="summary">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://echo.github.io/2021/09/25/hello-world/index.html">
+  <link rel="canonical" href="https://echo.github.io/2021/09/25/sql%E6%89%8B%E5%B7%A5%E6%B3%A8%E5%85%A5%E6%B5%81%E7%A8%8B/index.html">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -281,14 +281,14 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="post-hello-world" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-sql手工注入流程" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      SQL手工注入流程
     </h1>
   
 
@@ -296,8 +296,8 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2021/09/25/hello-world/" class="article-date">
-	  <time datetime="2021-09-25T05:20:39.531Z" itemprop="datePublished">2021-09-25</time>
+	<a href="/2021/09/25/sql%E6%89%8B%E5%B7%A5%E6%B3%A8%E5%85%A5%E6%B5%81%E7%A8%8B/" class="article-date">
+	  <time datetime="2021-09-25T12:23:50.461Z" itemprop="datePublished">2021-09-25</time>
 	</a>
 </span>
         
@@ -305,25 +305,18 @@
 
         
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2021/09/25/hello-world/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2021/09/25/sql%E6%89%8B%E5%B7%A5%E6%B3%A8%E5%85%A5%E6%B5%81%E7%A8%8B/#comments" class="article-comment-link">Comments</a></span>
         
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New POSt&quot;</span></span><br></pre></td></tr></table></figure>
+        <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">sql注入点根据不同维度可分为：</span><br><span class="line">	1.根据请求方式分类：</span><br><span class="line">		GET方式请求注入</span><br><span class="line">			常见产生位置：url</span><br><span class="line">		POST方式请求注入</span><br><span class="line">			常见产生位置：POST包的请求实体</span><br><span class="line">	2.根据注入点参数分类：</span><br><span class="line">		整数型注入</span><br><span class="line">			例：</span><br><span class="line">				select uname,password form users where uid=$id</span><br><span class="line">		字符型注入</span><br><span class="line">			例：</span><br><span class="line">				select uname,password form users where uid=&#x27;$id&#x27;</span><br><span class="line">		搜索型注入</span><br><span class="line">			例：</span><br><span class="line">				select uname,password form users where uname=&#x27;%$uname%&#x27;</span><br><span class="line">	3.根据sql注入点反馈类型分配（重点）</span><br><span class="line">		union类型</span><br><span class="line">		基于错误显示</span><br><span class="line">		布尔类型</span><br><span class="line">		基于时间</span><br><span class="line">		其他类型</span><br><span class="line">	4.根据web应用的数据库类型分类（数据库样式扩充）</span><br><span class="line">		mysql	sqlserver	oracle	access</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">sql万能密码</span><br><span class="line">	常见万能密码：</span><br><span class="line">		ASP/ASPX：			</span><br><span class="line">		1.&#x27;.).or.(&#x27;.a.&#x27;=&#x27;.a</span><br><span class="line">		2.or 1=1-- </span><br><span class="line">		3.&#x27;or 1=1-- </span><br><span class="line">		4.......</span><br><span class="line"></span><br><span class="line">		PHP: </span><br><span class="line">		1.admin’/* </span><br><span class="line">		2.&#x27;or 1=1/* </span><br><span class="line">		3.&quot;or &quot;a&quot;=&quot;a </span><br><span class="line">		4.......-</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">手工注入流程：</span><br><span class="line">	1.判断是否有注入漏洞，识别注入点类型</span><br><span class="line">	2.获取数据库中的信息</span><br><span class="line">		(1)获取数据库基本信息(数据库版本、数据库类型、查寻列数等) </span><br><span class="line">		(2)获取数据库名</span><br><span class="line">		(3)获取表名</span><br><span class="line">		(4)获取列名</span><br><span class="line">		(5)获取用户数据</span><br><span class="line">	3.破解加密数据（数据解密）</span><br><span class="line">	4、提升权限(利用数据库提权上升到系统权限提升) </span><br><span class="line">	5、内网渗透</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
       
     </div>
@@ -333,7 +326,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="https://echo.github.io/2021/09/25/hello-world/" title="Hello World" target="_blank" rel="external">https://echo.github.io/2021/09/25/hello-world/</a>
+      <a href="https://echo.github.io/2021/09/25/sql%E6%89%8B%E5%B7%A5%E6%B3%A8%E5%85%A5%E6%B5%81%E7%A8%8B/" title="SQL手工注入流程" target="_blank" rel="external">https://echo.github.io/2021/09/25/sql手工注入流程/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -379,10 +372,10 @@
   
   <ul class="pager pull-left">
     
-    <li class="prev">
-      <a href="/2021/09/25/sql%E6%89%8B%E5%B7%A5%E6%B3%A8%E5%85%A5%E6%B5%81%E7%A8%8B/" title="SQL手工注入流程"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;Newer</span></a>
-    </li>
     
+    <li class="next">
+      <a href="/2021/09/25/hello-world/" title="Hello World"><span>Older&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
     
     
   </ul>
